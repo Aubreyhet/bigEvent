@@ -35,7 +35,7 @@ $(function(){
         }
         $.ajax({
             type: "POST",
-            url: "http://api-breakingnews-web.itheima.net/api/reguser",
+            url: "/api/reguser",
             data: data,
             success: function (res) {
                 if(res.status !==0){
@@ -58,7 +58,7 @@ $(function(){
         }
         $.ajax({
             type: 'POST',
-            url: 'http://api-breakingnews-web.itheima.net/api/login',
+            url: '/api/login',
             data: data,
             success: function(res){
                 if(res.status != 0){
