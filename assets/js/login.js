@@ -3,11 +3,13 @@ $(function(){
     $('#link_reg').on('click',function(){
         $('.login-box').hide()
         $('.reg-box').show()
+        $('#login_box').find('input').val('')
     })
     //给去登录绑定点击事件
     $('#link_login').on('click',function(){
         $('.login-box').show()
         $('.reg-box').hide()
+        $('#reg_box').find('input').val('')
     })
 
     //自定义校验规则

@@ -27,7 +27,6 @@ function getUserInfo(){
             Authorization: window.localStorage.getItem('token') || ''
         },
         success: function (res) {
-            console.log(res)
             //调用渲染用户名和用户头像方法
             if(res.status === 0){
                 renderUser(res.data)
@@ -40,13 +39,14 @@ function getUserInfo(){
 //定义渲染用户信息的方法
 function renderUser(user){
     //用户名渲染
-    $('#wellcome').html(user.nickname || user.username);
+    let name = user.nickname || user.username
+    $('#wellcome').html(name);
     //用户头像渲染
     if(user.user_pic){
         $('.layui-nav-img').attr('src', user.user_pic).show();
         $('.text-pic').hide()
     }else{
         $('.layui-nav-img').hide()
-        $('.text-pic').html(user.username[0].toUpperCase()).show()
+        $('.text-pic').html(name[0].toUpperCase()).show()
     }
 }
