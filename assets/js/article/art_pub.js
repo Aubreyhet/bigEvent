@@ -16,7 +16,7 @@ $(function(){
                 let data = res.data
                 data.forEach(val => {
                     $('#select').append(`
-                    <option value="${val.Id}">${val.name}</option>
+                    <option value="${val.id}">${val.name}</option>
                     `)
                 })
                 form.render()
@@ -99,7 +99,6 @@ $(function(){
             contentType: false,
             processData: false,
             success: function(res){
-                console.log(res)
                 if(res.status !== 0){
                     return layer.msg(res.message)
                 }else{
@@ -109,8 +108,5 @@ $(function(){
             }
         })
     }
-
 })
-
-
 

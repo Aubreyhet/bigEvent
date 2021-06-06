@@ -15,7 +15,6 @@ const options = {
 $image.cropper(options)
 
 $('#btnChangeImg').on('click',function(){
-    console.log(123)
     $('#file').click()
 })
 $('#file').on('change',function(e){

@@ -19,8 +19,8 @@ $(function(){
                                     <td>${element.name}</td>
                                     <td>${element.alias}</td>
                                     <td>
-                                    <button id='art-edit' data-id=${element.Id} type="button" class="layui-btn layui-btn-xs">编辑</button>
-                                    <button data-id=${element.Id} type="button" class="layui-btn layui-btn-danger layui-btn-xs btn-delete">删除</button>
+                                    <button id='art-edit' data-id=${element.id} type="button" class="layui-btn layui-btn-xs">编辑</button>
+                                    <button data-id=${element.id} type="button" class="layui-btn layui-btn-danger layui-btn-xs btn-delete">删除</button>
                                     </td>
                                 </tr>
                                 `

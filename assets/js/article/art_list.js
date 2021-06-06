@@ -5,8 +5,8 @@ $(function(){
     let q = {
         pagenum: 1,
         pagesize: 2,
-        cate_id: $('[name=cate_id]').val(),
-        state: $('[name=state]').val()
+        cate_id: '',
+        state: ''
     }
     initArtList()
     //文章列表初始化方法
@@ -29,8 +29,8 @@ $(function(){
                                     <td>${element.pub_date}</td>
                                     <td>${element.state}</td>
                                     <td>
-                                    <button id='art-edit' data-id=${element.Id} type="button" class="layui-btn layui-btn-xs">编辑</button>
-                                    <button data-id=${element.Id} type="button" class="layui-btn layui-btn-danger layui-btn-xs btn-delete">删除</button>
+                                    <button id='art-edit' data-id=${element.id} type="button" class="layui-btn layui-btn-xs">编辑</button>
+                                    <button data-id=${element.id} type="button" class="layui-btn layui-btn-danger layui-btn-xs btn-delete">删除</button>
                                     </td>
                                 </tr>
                                 `
